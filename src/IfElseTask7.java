@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-    public class ifelsetask7 {
+    public class IfElseTask7 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
