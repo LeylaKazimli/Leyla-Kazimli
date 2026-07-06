@@ -2,8 +2,7 @@
 // Üçbucağın mümkün olub-olmadığı və növü müəyyən edilir.
 
 import java.util.Scanner;
-
-public class IfElseTask8 {
+    public class IfElseTask8 {
     public static void main(String[] args) {
 
         // Scanner obyekti yaradılır
