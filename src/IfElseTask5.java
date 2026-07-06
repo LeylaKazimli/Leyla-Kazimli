@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class IfElseTask5 {
+    public class IfElseTask5 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

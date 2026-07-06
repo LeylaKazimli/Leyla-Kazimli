@@ -1,5 +1,7 @@
 
-     import java.util.Scanner;
+// İstifadəçidən iki ədəd və əməliyyat işarəsi alınır.
+// Switch ilə seçilən əməliyyat yerinə yetirilir.
+    import java.util.Scanner;
 
     public class IfElseTask6 {
     public static void main(String[] args) {
