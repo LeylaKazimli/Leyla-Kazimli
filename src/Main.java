@@ -2,16 +2,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Menecer menecer = new Menecer();
-        menecer.setAd("Leyla");
-        menecer.ozunuTeqdimEt();
-        menecer.idareEt();
+        EmanetHesabi hesab = new EmanetHesabi();
 
-        System.out.println();
+        hesab.setAd("Leyla");
 
-        Developer developer = new Developer();
-        developer.setAd("Aysel");
-        developer.ozunuTeqdimEt();
-        developer.kodYaz();
+        hesab.medaxilEt(1000);
+
+        hesab.faizElaveEt();
+
+        hesab.goster();
+
     }
 }
