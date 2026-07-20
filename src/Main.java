@@ -2,15 +2,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        EmanetHesabi hesab = new EmanetHesabi();
+        kalkulyator kalkulyator = new kalkulyator();
 
-        hesab.setAd("Leyla");
+        System.out.println(kalkulyator.vurma(5, 4));
 
-        hesab.medaxilEt(1000);
+        System.out.println(kalkulyator.vurma(2, 3, 4));
 
-        hesab.faizElaveEt();
-
-        hesab.goster();
+        System.out.println(kalkulyator.vurma(2.5, 4.0));
 
     }
+
 }
