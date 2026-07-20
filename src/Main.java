@@ -2,15 +2,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Bildiris[] bildirisler = {
-                new EmailBildiris(),
-                new SmsBildiris(),
-                new PushBildiris()
-        };
+        KofeMasini kofe = new KofeMasini();
 
-        for (int i = 0; i < bildirisler.length; i++) {
-            bildirisler[i].gonder();
-        }
+        kofe.kofeHazirla();
 
     }
 
