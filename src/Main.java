@@ -2,9 +2,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        KofeMasini kofe = new KofeMasini();
+        Bankomat bankomat = new Bankomat();
 
-        kofe.kofeHazirla();
+        bankomat.pulCek(1500);
+
+        bankomat.pulCek(500);
 
     }
 
