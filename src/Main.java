@@ -2,13 +2,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        kalkulyator kalkulyator = new kalkulyator();
+        Bildiris[] bildirisler = {
+                new EmailBildiris(),
+                new SmsBildiris(),
+                new PushBildiris()
+        };
 
-        System.out.println(kalkulyator.vurma(5, 4));
-
-        System.out.println(kalkulyator.vurma(2, 3, 4));
-
-        System.out.println(kalkulyator.vurma(2.5, 4.0));
+        for (int i = 0; i < bildirisler.length; i++) {
+            bildirisler[i].gonder();
+        }
 
     }
 
