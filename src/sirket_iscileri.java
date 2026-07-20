@@ -1,4 +1,4 @@
-public class Main {
+public class sirket_iscileri {
 
     public static void main(String[] args) {
 
@@ -6,8 +6,6 @@ public class Main {
         menecer.setAd("Leyla");
         menecer.ozunuTeqdimEt();
         menecer.idareEt();
-
-        System.out.println();
 
         Developer developer = new Developer();
         developer.setAd("Aysel");
