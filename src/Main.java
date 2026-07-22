@@ -2,12 +2,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Bankomat bankomat = new Bankomat();
+        Menecerr m = new Menecerr("Leyla", 8);
 
-        bankomat.pulCek(1500);
-
-        bankomat.pulCek(500);
-
+        System.out.println("Ad: " + m.ad);
+        System.out.println("Komanda sayı: " + m.komandaSayi);
     }
-
 }
