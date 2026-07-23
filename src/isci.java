@@ -1,14 +1,8 @@
-class Isci {
+public class isci {
 
     String ad;
 
-    public void setAd(String ad) {
+    public isci(String ad) {
         this.ad = ad;
     }
-
-    public void ozunuTeqdimEt() {
-        System.out.println("Mənim adım " + ad + "-dır.");
-    }
-
 }
-

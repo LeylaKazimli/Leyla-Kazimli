@@ -1,4 +1,4 @@
-class Menecerr extends ishci {
+class Menecerr extends isci {
 
     int komandaSayi;
 
