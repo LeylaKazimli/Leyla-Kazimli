@@ -1,4 +1,4 @@
-public class TeciliEmailBildiris extends EmailBildiriss {
+public class TeciliEmailBildiris extends EmailBildiris {
 
     @Override
     public void gonder() {

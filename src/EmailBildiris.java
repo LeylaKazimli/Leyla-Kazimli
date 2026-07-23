@@ -1,8 +1,9 @@
-class EmailBildiris extends Bildiris {
+public class EmailBildiris extends Bildiris {
 
     @Override
     public void gonder() {
-        System.out.println("Email göndərildi.");
+        super.gonder();
+        System.out.println("Email vasitəsilə göndərildi.");
     }
 
 }
