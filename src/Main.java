@@ -2,14 +2,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        test[] testler = {
-                new UITest(),
-                new APITest(),
-                new DBTest()
-        };
+        depozit depozit = new depozit();
+        kredit kredit = new kredit();
 
-        for (test t : testler) {
-            t.icraEt();
-        }
+        depozit.balansGoster();
+        depozit.faizHesabla();
+
+        kredit.balansGoster();
+        kredit.faizHesabla();
+
+        // Hesab hesab = new Hesab();  // Xəta verəcək
     }
 }
