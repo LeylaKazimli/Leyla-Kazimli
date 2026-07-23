@@ -2,10 +2,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        PDFSened pdf = new PDFSened("CV");
-        WordSened word = new WordSened("Diplom");
+        Servis servis = new Servis();
 
-        pdf.capEt();
-        word.capEt();
+        servis.log();
     }
 }

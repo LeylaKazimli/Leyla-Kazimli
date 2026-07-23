@@ -1,0 +1,4 @@
+interface Loglana {
+
+    void log();
+}
