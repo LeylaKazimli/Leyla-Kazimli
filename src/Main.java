@@ -1,10 +1,17 @@
 public class Main {
-
     public static void main(String[] args) {
 
-        Menecerr m = new Menecerr("Leyla", 8);
+        Bildiris bildiris = new Bildiris();
+        bildiris.gonder();
 
-        System.out.println("Ad: " + m.ad);
-        System.out.println("Komanda sayı: " + m.komandaSayi);
+        System.out.println();
+
+        EmailBildiris email = new EmailBildiris();
+        email.gonder();
+
+        System.out.println();
+
+        TeciliEmailBildiris tecili = new TeciliEmailBildiris();
+        tecili.gonder();
     }
 }
