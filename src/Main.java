@@ -2,8 +2,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Servis servis = new Servis();
+        FaylMenecer fayl = new FaylMenecer();
 
-        servis.log();
+        fayl.yukle();
+        fayl.endir();
+
     }
 }

@@ -1,0 +1,5 @@
+interface Endirile {
+
+    void endir();
+
+}
