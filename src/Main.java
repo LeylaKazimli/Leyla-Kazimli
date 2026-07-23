@@ -1,17 +1,15 @@
 public class Main {
+
     public static void main(String[] args) {
 
-        Bildiris bildiris = new Bildiris();
-        bildiris.gonder();
+        test[] testler = {
+                new UITest(),
+                new APITest(),
+                new DBTest()
+        };
 
-        System.out.println();
-
-        EmailBildiris email = new EmailBildiris();
-        email.gonder();
-
-        System.out.println();
-
-        TeciliEmailBildiris tecili = new TeciliEmailBildiris();
-        tecili.gonder();
+        for (test t : testler) {
+            t.icraEt();
+        }
     }
 }
