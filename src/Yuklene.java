@@ -1,5 +1,0 @@
-interface Yuklene {
-
-    void yukle();
-
-}
