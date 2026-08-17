@@ -51,12 +51,6 @@ public class GecikenElement {
         System.out.println("Element " + kecen + " ms sonra gorundu");
         System.out.println("Metn: " + gecikmis.getText());
 
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
         driver.quit();
     }
 }
