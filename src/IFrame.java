@@ -1,6 +1,10 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class IFrame {
 
@@ -10,29 +14,61 @@ public class IFrame {
 
         driver.get("https://anarabbas.com/labs/auto-lab");
 
+        WebDriverWait wait = new WebDriverWait(
+                driver, Duration.ofSeconds(10)
+        );
+
         // iFrame bölməsini aç
-        driver.findElement(By.xpath("//button[contains(text(),'iFrame')]")).click();
+        wait.until(
+                ExpectedConditions.elementToBeClickable(
+                        By.xpath("//*[contains(text(),'iFrame')]")
+                )
+        ).click();
 
         // Xarici iframe-ə keç
-        driver.switchTo().frame("demoFrame");
+        wait.until(
+                ExpectedConditions.frameToBeAvailableAndSwitchToIt(
+                        "demoFrame"
+                )
+        );
 
         // Frame daxilində input-a yaz
-        driver.findElement(By.id("frameInput")).sendKeys("Leyla");
+        wait.until(
+                ExpectedConditions.elementToBeClickable(
+                        By.id("frameInput")
+                )
+        ).sendKeys("Leyla");
 
         // Frame daxilindəki düyməyə kliklə
-        driver.findElement(By.id("frameBtn")).click();
+        wait.until(
+                ExpectedConditions.elementToBeClickable(
+                        By.id("frameBtn")
+                )
+        ).click();
 
         // Nested iframe-ə keç
-        driver.switchTo().frame("innerFrame");
+        wait.until(
+                ExpectedConditions.frameToBeAvailableAndSwitchToIt(
+                        "innerFrame"
+                )
+        );
 
         // Nested frame daxilindəki düyməyə kliklə
-        driver.findElement(By.id("innerFrameBtn")).click();
+        wait.until(
+                ExpectedConditions.elementToBeClickable(
+                        By.id("innerFrameBtn")
+                )
+        ).click();
 
         // Birbaşa əsas səhifəyə qayıt
         driver.switchTo().defaultContent();
 
-        // Əsas səhifədən element tap və mətnini çap et
-        String text = driver.findElement(By.cssSelector("h3")).getText();
+        // Əsas səhifədə elementin görünməsini gözlə
+        String text = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(
+                        By.cssSelector("h3")
+                )
+        ).getText();
 
         System.out.println("Əsas səhifəyə qayıtdıq: " + text);
 

@@ -69,7 +69,7 @@ public class AlertsModal {
 
 
         // 4. Saxta Modal
-        // switchTo().alert() İSTİFADƏ ETMİRİK
+        // switchTo().alert() istifadə etmirik
         driver.findElement(By.id("openModal")).click();
 
         // Modalın içindəki mətn sahəsinə yaz
@@ -78,14 +78,6 @@ public class AlertsModal {
 
         // Təsdiq düyməsinə kliklə
         driver.findElement(By.id("modalSubmit")).click();
-
-
-        // Nəticəni görmək üçün
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
 
         driver.quit();
     }
